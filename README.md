@@ -25,7 +25,7 @@ jobs:
     if: github.event.deployment_status.state == 'success'
     runs-on: ubuntu-latest
     steps:
-      - uses: axoxweb/websentry-action@v1
+      - uses: websentrydev/action@v1
         with:
           url: ${{ github.event.deployment_status.environment_url }}
           api-key: ${{ secrets.WEBSENTRY_API_KEY }}
@@ -43,7 +43,7 @@ jobs:
   security:
     runs-on: ubuntu-latest
     steps:
-      - uses: axoxweb/websentry-action@v1
+      - uses: websentrydev/action@v1
         with:
           url: https://example.com
           api-key: ${{ secrets.WEBSENTRY_API_KEY }}
@@ -93,7 +93,7 @@ Leave `fail-on` out and it picks for you: `both` if you set a `minimum-score`, o
 Use them in later steps:
 
 ```yaml
-      - uses: axoxweb/websentry-action@v1
+      - uses: websentrydev/action@v1
         id: websentry
         with:
           url: https://example.com

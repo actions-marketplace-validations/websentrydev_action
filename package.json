@@ -18,7 +18,7 @@
   "author": "AXOX Web Solutions <support@websentry.dev>",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/axoxweb/websentry-action.git"
+    "url": "git+https://github.com/websentrydev/action.git"
   },
   "dependencies": {
     "@actions/core": "^1.11.1",
